@@ -19,7 +19,7 @@ body {
     display: inline-block;
     width: 100%; /* Ensures the typed text spans the full container width */
     white-space: pre-wrap; /* Handles line breaks properly */
-    right: -520px;
+    right: -820px;
 }
 
 /* Style for the typed text */
