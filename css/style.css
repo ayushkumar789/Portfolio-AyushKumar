@@ -19,6 +19,7 @@ body {
     display: inline-block;
     width: 100%; /* Ensures the typed text spans the full container width */
     white-space: pre-wrap; /* Handles line breaks properly */
+    right: -520px;
 }
 
 /* Style for the typed text */
@@ -299,7 +300,7 @@ input:focus, textarea:focus, select:focus, button:focus {
 .prt_home_wrapper h1 {
     position: absolute;
     top: 200px;
-    right: -520px;
+
     font-size: 100px;
     color: #ffffff;
     font-weight: bold;
