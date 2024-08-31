@@ -276,7 +276,8 @@
 			typeSpeed: 80,
 			backSpeed: 80,
 			fadeOut: true,
-			loop: true
+			loop: true,
+			startDelay: 500
 		});
 	});
 		
