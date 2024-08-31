@@ -1003,7 +1003,9 @@ input:focus, textarea:focus, select:focus, button:focus {
 .circles-text {
 	font-size: 36px !important;
 	color:#ffffff;
-	font-weight:500;
+	font-weight:800;
+    stroke: #0a0a0a; /* This property works in SVG but not directly in CSS for text */
+    -webkit-text-stroke: 1px #0a0a0a;
 }
 #canvas{
 	display:inline-block;
@@ -1018,35 +1020,48 @@ input:focus, textarea:focus, select:focus, button:focus {
 #canvas h5{
 	font-size:18px;
 	text-align:center;
+    stroke: #0a0a0a;
 }
-#circles-1{
-	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg);
-	border-radius: 100%;
+#circles-1 {
+    background-image: url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg);
+    border-radius: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
+
+
+
+
 #circles-2{
 	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg);
 	border-radius: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
+
 #circles-3{
 	background-image:url(https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg);
 	border-radius: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+
 }
+
 #circles-4{
 	background-image:url("../images/content/html-css.png");
 	border-radius: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
+
 .circles-decimals {
 	font-size: .4em;
 }
@@ -1078,8 +1093,11 @@ input:focus, textarea:focus, select:focus, button:focus {
     margin-top: 20px;
 }
 .prt_client_slider .owl-carousel .owl-item img{
-	width:auto !important;
+    width: 100%; /* Ensures the images take up the full width of their container */
+    height: 100px; /* Set a specific height for the images */
+    object-fit: contain;
     display: inline-block;
+    margin: 0 auto;
 	opacity:0.4;
 	-webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
