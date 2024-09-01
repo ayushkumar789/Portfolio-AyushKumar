@@ -10,9 +10,8 @@ body {
 }
 .custom-container {
 
-    max-width: 1200px; /* Adjust this value to increase the container width */
-    width: 100%; /* Ensures the container takes up the full width allowed by max-width */
-    width: 100%; /* Ensures the container takes up the full width allowed by max-width */
+    max-width: 100%; /* Adjust this value to increase the container width */
+    /* Ensures the container takes up the full width allowed by max-width */
     margin: 0 auto; /* Centers the container */
     margin-left: 850px;
 }
