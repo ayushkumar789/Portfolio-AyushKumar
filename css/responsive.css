@@ -59,7 +59,7 @@ img, video {
     }
 }
 
-/* Additional Element Adjustments */
+/* Sidebar and Main Content Adjustments */
 @media (max-width: 768px) {
     .sidebar {
         display: none;
@@ -70,6 +70,7 @@ img, video {
     }
 }
 
+/* Header and Footer Adjustments */
 @media (max-width: 576px) {
     .header, .footer {
         text-align: center;
@@ -77,5 +78,16 @@ img, video {
     }
     .header h1 {
         font-size: 1.5em;
+    }
+}
+
+/* Additional Element Adjustments */
+@media (max-width: 576px) {
+    .card {
+        margin-bottom: 20px;
+    }
+    .responsive-table {
+        display: block;
+        overflow-x: auto;
     }
 }
