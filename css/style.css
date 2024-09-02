@@ -1620,21 +1620,13 @@ input:focus, textarea:focus, select:focus, button:focus {
         /* Converted 100px to rem */
         text-align: center;
     }
-    .prt_home_wrapper{
-        background-image:url(../images/content/banner_bg.jpg);
-        background-position: center center;
-        background-repeat:no-repeat;
-        background-size:cover;
-        position:relative;
-        overflow-y:auto;
-        padding: 12.5rem 0; /* Converted 200px to rem */
-    }
+
     .prt_home_wrapper h1 {
         position: absolute;
         top: 12.5rem; /* Converted 200px to rem */
         right: 6.25rem; /* Converted 100px to rem */
          /* Ensure the text doesn't overlap the background image */
-        font-size: 9.375rem; /* Converted 150px to rem */
+        font-size: 3.75rem; /* Converted 150px to rem */
         color: #ffffff;
         font-weight: bold;
         background: url(../images/content/banner_text_bg.jpg) no-repeat;
