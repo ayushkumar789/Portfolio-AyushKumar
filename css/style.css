@@ -10,10 +10,10 @@ body {
 }
 .custom-container {
 
-    max-width: 100%; /* Adjust this value to increase the container width */
-    /* Ensures the container takes up the full width allowed by max-width */
-    margin: 0 auto; /* Centers the container */
-    margin-left: 850px;
+    max-width: 100%; /* Ensures full-width container */
+    margin: 0 auto;
+    padding-right: 100px; /* Adds some padding on the right */
+    text-align: right;
 }
 
 /* Style for the typed text */
@@ -173,6 +173,8 @@ input:focus, textarea:focus, select:focus, button:focus {
 .prt_home_wrapper h1 {
     position: absolute;
     top: 200px;
+    right: 100px; /* Adjust this to control the exact right alignment */
+    max-width: 55%; /* Ensure the text doesn't overlap the background image */
     font-size: 150px;
     color: #ffffff;
     font-weight: bold;
@@ -181,8 +183,10 @@ input:focus, textarea:focus, select:focus, button:focus {
     -webkit-text-fill-color: transparent;
     background-size: cover;
     background-position: -11px -785px;
-
-
+    text-align: right; /* Ensures text within h1 aligns to the right */
+    overflow-wrap: break-word; /* Ensure long words break to the next line */
+    word-wrap: break-word; /* Compatibility for older browsers */
+    white-space: normal; /* Ensure text wraps within the h1 */
 }
 .prt_logo_wrapper img{
     position: fixed;
