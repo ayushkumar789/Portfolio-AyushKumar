@@ -183,12 +183,7 @@ input:focus, textarea:focus, select:focus, button:focus {
     word-wrap: break-word; /* Compatibility for older browsers */
     white-space: normal; /* Ensure text wraps within the h1 */
 }
-@media (max-width: 768px) {
-    .prt_home_wrapper {
-        background-image: none; /* Remove the background image on small screens */
-        padding: 6.25rem 0; /* Converted 100px to rem */
-    }
-}
+
 .prt_logo_wrapper img{
     position: fixed;
     left: 3.125rem; /* Converted 50px to rem */
@@ -1564,17 +1559,19 @@ input:focus, textarea:focus, select:focus, button:focus {
     /* Adjust the container width for large screens */
     .custom-container {
         max-width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+        padding-right: 6.25rem; /* Converted 100px to rem */
+        text-align: right;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     /* Adjust the container width for medium screens */
     .custom-container {
         padding: 0 0.9375rem; /* Converted 15px to rem */
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+        padding-right: 6.25rem; /* Converted 100px to rem */
+        text-align: right;
     }
 
     /* Adjust font sizes for headings */
@@ -1584,11 +1581,17 @@ input:focus, textarea:focus, select:focus, button:focus {
 }
 
 @media (max-width: 768px) {
+
+    .prt_home_wrapper {
+        background-image: none; /* Remove the background image on small screens */
+        padding: 6.25rem 0; /* Converted 100px to rem */
+    }
     /* Adjust the container width and padding for tablets */
     .custom-container {
         padding: 0 0.625rem; /* Converted 10px to rem */
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+        padding-right: 6.25rem; /* Converted 100px to rem */
+        text-align: right;
     }
 
     /* Adjust font sizes and line heights for smaller screens */
@@ -1604,12 +1607,45 @@ input:focus, textarea:focus, select:focus, button:focus {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
+
+    .prt_home_wrapper {
+        background-image: none; /* Remove the background image on small screens */
+        padding: 6.25rem 0; /* Converted 100px to rem */
+    }
     /* Adjust the container width and padding for mobile phones */
     .custom-container {
         padding: 0 0.3125rem; /* Converted 5px to rem */
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+        /* Converted 100px to rem */
+        text-align: center;
+    }
+    .prt_home_wrapper{
+        background-image:url(../images/content/banner_bg.jpg);
+        background-position: center center;
+        background-repeat:no-repeat;
+        background-size:cover;
+        position:relative;
+        overflow-y:auto;
+        padding: 12.5rem 0; /* Converted 200px to rem */
+    }
+    .prt_home_wrapper h1 {
+        position: absolute;
+        top: 12.5rem; /* Converted 200px to rem */
+        right: 6.25rem; /* Converted 100px to rem */
+         /* Ensure the text doesn't overlap the background image */
+        font-size: 9.375rem; /* Converted 150px to rem */
+        color: #ffffff;
+        font-weight: bold;
+        background: url(../images/content/banner_text_bg.jpg) no-repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: cover;
+        background-position: -0.6875rem -49.0625rem; /* Converted 11px to rem and 785px to rem */
+        text-align: center; /* Ensures text within h1 aligns to the right */
+        overflow-wrap: break-word; /* Ensure long words break to the next line */
+        word-wrap: break-word; /* Compatibility for older browsers */
+        white-space: normal; /* Ensure text wraps within the h1 */
     }
 
     /* Further reduce font sizes for small mobile screens */
